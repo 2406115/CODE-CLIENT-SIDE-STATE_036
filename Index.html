@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Andreas Bima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Bagian kepala CV -->
+    <header>
+        <h1>CURRICULUM VITAE</h1>
+        <p>Andreas Bima</p>
+        <!-- localStorage: tombol tema + penghitung kunjungan -->
+        <button id="btn-tema">Mode Gelap</button>
+        <p id="info-kunjungan"></p>
+    </header>
+
+    <main>
+
+        <!-- Section Profil: Menampilkan foto diri dan deskripsi singkat latar belakang serta minat -->
+        <section>
+            <h2>Profil</h2>
+
+            <div class="profil">
+
+                <!-- Ganti foto.jpg dengan nama foto kamu -->
+                <img src="IMG_2394.JPG" alt="Andreas Bima">
+
+                <div>
+                    <p>
+                        Halo, saya Andreas Bima. Saya merupakan mahasiswa Sanata Dharma
+                        Program Studi Informatika yang memiliki ketertarikan
+                        pada bidang teknologi dan pemrograman. Saya juga memliki ketertarikan
+                        dengan bermain alat musik dan dalam dunia fotografi.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Data Pribadi: Menyajikan rincian identitas dan kontak pengguna dalam bentuk tabel -->
+        <section>
+            <h2>Data Pribadi</h2>
+
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>Andreas Bima</td>
+                </tr>
+
+                <tr>
+                    <td>Program Studi</td>
+                    <td>Informatika</td>
+                </tr>
+
+                <tr>
+                    <td>Universitas</td>
+                    <td>Universitas Sanata Dharma</td>
+                </tr>
+
+                <tr>
+                    <td>Email</td>
+                    <td>andreasbima2413@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>No telp</td>
+                    <td>
+                        <a href="https://wa.me/6287833385503"></a>
+                        0878-3338-5503
+                    </td>
+                </tr>
+                <tr>
+                    <td>Instagram</td>
+                    <td>
+                        <a href="https://www.instagram.com/">
+                            bima_withcamera
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Section Hobi: Memuat daftar minat dan kegiatan non-akademik menggunakan list poin -->
+        <section>
+            <h2>Hobi</h2>
+
+            <ul>
+                <li>Drumer</li>
+                <li>Fotografer</li>
+                <li>Editor</li>
+                <li>Bermain badminton</li>
+            </ul>
+        </section>
+
+        <!-- Section Analisis SWOT: Evaluasi diri yang terbagi atas Kekuatan, Kelemahan, Peluang, dan Ancaman -->
+        <section>
+            <h2>Analisis SWOT</h2>
+
+            <h3>Strengths (Kekuatan)</h3>
+            <ul>
+                <li>Memiliki kemampuan untuk mudah beradaptasi pada lingkungan baru.</li>
+                <li>Memiliki perasaan yang selalu penasaran akan pengalaman baru.</li>
+                <li>Berani bertanggung jawab atas apa yang dilakukan .</li>
+                <li>Memiliki sifat yang mudah untuk berkerja sama.</li>
+                <li>Senang akan membantu Orang yang sedang kesusahan.</li>
+                <li>Senang dengan memperhatikan hal-hal yang kecil.</li>
+            </ul>
+
+            <h3>Weaknesses (Kelemahan)</h3>
+            <ul>
+                <li>Saya adalah orang yang mudah emosi dan lambat bergerak saat merasa mengantuk atau lelah.</li>
+            </ul>
+
+            <h3>Opportunities (Peluang)</h3>
+            <ul>
+                <li>Memiliki kesempatan untuk mengembangkan kemampuan di bidang teknologi.</li>
+                <li>Dapat mengembangkan kemampuan fotografi dan editing menjadi pengalaman profesional.</li>
+                <li>Dapat mengikuti berbagai proyek dan kegiatan untuk menambah pengalaman.</li>
+            </ul>
+
+            <h3>Threats (Ancaman)</h3>
+            <ul>
+                <li>Perkembangan teknologi yang cepat sehingga harus terus belajar.</li>
+                <li>Persaingan di bidang teknologi dan kreatif yang semakin tinggi.</li>
+                <li>Perubahan teknologi dapat membuat kemampuan yang dimiliki perlu terus diperbarui.</li>
+            </ul>
+        </section>
+
+        <!-- Tambahan localStorage: buku tamu -->
+        <section id="buku-tamu">
+            <h2>Buku Tamu</h2>
+            <form id="form-komentar">
+                <input type="text" id="input-nama" placeholder="Nama Anda"
+                       required minlength="3" maxlength="30">
+                <textarea id="input-pesan" placeholder="Tulis pesan..."
+                          required minlength="5" maxlength="200"></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+            <ul id="daftar-komentar"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Andreas Bima</p>
+        <button id="btn-reset">Reset Semua Data</button>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
